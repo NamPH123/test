@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">App_TCare</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="next">Kế tiếp</string>
+    <string name="t1">Chúng tôi có đội ngũ y bác sĩ chuyên nghiệp</string>
+    <string name="t2">Chúng tôi có những phòng khám chuẩn quốc tế</string>
+    <string name="become_the">Chào mừng bạn tới với chuỗi phòng khám</string>
+    <string name="ultimate_prankster">Tcare</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="start_protecting_yourself_with_solarvpn">Chăm sóc sức khỏe cùng Tcare</string>
+    <string name="login">Đăng nhập</string>
+    <string name="h_y_ch_m_s_c_s_c_kh_e_c_ng_tcare">Hãy chăm sóc sức khỏe cùng Tcare</string>
 </resources>
