@@ -28,7 +28,7 @@ class SplashActivity: AbsBaseActivity<ActivitySplashBinding>(false) {
 
     override fun onStart() {
         super.onStart()
-        handler.postDelayed(runnable, 2000)
+        handler.postDelayed(runnable, 3000)
     }
 
     override fun onStop() {

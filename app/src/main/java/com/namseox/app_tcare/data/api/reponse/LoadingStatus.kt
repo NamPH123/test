@@ -1,4 +1,4 @@
-package com.pranksound.fart.airhorn.haircut.data.api.reponse
+package com.namseox.app_tcare.data.api.reponse
 
 enum class LoadingStatus {
     Idle, Loading, Success, Error, LoadingMore, Refresh

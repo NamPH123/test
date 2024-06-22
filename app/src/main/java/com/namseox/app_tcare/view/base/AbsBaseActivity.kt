@@ -27,7 +27,7 @@ abstract class AbsBaseActivity<V : ViewDataBinding>(var fragment : Boolean) : Ap
     }
     override fun onResume() {
         super.onResume()
-        showSystemUI(true)
+        showSystemUI(false)
     }
 
     abstract fun getFragmentID(): Int

@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#49C7EF">
+        android:background="@color/antique_white">
 
         <LinearLayout
             android:id="@+id/linear_language"
@@ -46,11 +46,12 @@
 
             </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_marginTop="14dp"
+                android:gravity="center|top"
                 android:background="@drawable/bg_screen_language">
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -89,7 +90,86 @@
                     android:textSize="20sp"
                     android:gravity="center"
                     android:layout_marginHorizontal="36dp"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="20dp"
+                    app:boxStrokeColor="@color/a949494"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="@color/a6B6B6B"
+                    app:hintTextAppearance="@style/MyHintTextAppearance"
+                    app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize8sdpPercents"
+                    app:boxStrokeWidthFocused="1dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="64dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/grandstander_regular"
+                        android:hint="@string/email"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/a6B6B6B"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPass"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="20dp"
+                    app:boxStrokeColor="@color/a949494"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="@color/a6B6B6B"
+                    app:hintTextAppearance="@style/MyHintTextAppearance"
+                    app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize8sdpPercents"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/grandstander_regular"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/a6B6B6B"
+                        android:textSize="14sp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginHorizontal="64dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginHorizontal="64dp"
+                    android:background="@drawable/bg_card_border3"
+                    android:backgroundTint="@color/_ffe500"
+                    android:text="@string/sign_in"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/grandstander_bold"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/b_n_ch_a_c_t_i_kho_n_h_y_ng_k_t_i_y"/>
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>

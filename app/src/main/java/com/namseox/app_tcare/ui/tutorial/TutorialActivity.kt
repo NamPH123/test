@@ -6,7 +6,7 @@ import android.view.View
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.namseox.app_tcare.MainActivity
+import com.namseox.app_tcare.ui.home.MainActivity
 import com.namseox.app_tcare.R
 import com.namseox.app_tcare.data.model.TutorialModel
 import com.namseox.app_tcare.databinding.ActivityTutorialBinding
@@ -46,7 +46,7 @@ class TutorialActivity: AbsBaseActivity<ActivityTutorialBinding>(false) {
                 TextUtils.concat(
                     changeText(this, getString(R.string.become_the), R.color.white, R.font.grandstander_bold),
                     space,
-                    changeText(this, getString(R.string.ultimate_prankster), R.color._ffe500, R.font.grandstander_bold),
+                    changeText(this, getString(R.string.ultimate_prankster), R.color.blue, R.font.grandstander_bold),
                 )
             )
         )

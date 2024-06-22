@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_navigation_home.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.namseox.app_tcare.ui.home.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_calanderFragment"
+            app:destination="@id/calanderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calanderFragment"
+        android:name="com.namseox.app_tcare.ui.home.calander.CalanderFragment"
+        android:label="CalanderFragment" >
+        <action
+            android:id="@+id/action_calanderFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.namseox.app_tcare.ui.home.news.NewsFragment"
+        android:label="NewsFragment" >
+        <action
+            android:id="@+id/action_newsFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.namseox.app_tcare.ui.home.user.UserFragment"
+        android:label="UserFragment" />
+</navigation>

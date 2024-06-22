@@ -1,4 +1,4 @@
-package com.pranksound.fart.airhorn.haircut.data.api.base
+package com.namseox.app_tcare.data.api.base
 
 import android.content.Context
 import okhttp3.OkHttpClient

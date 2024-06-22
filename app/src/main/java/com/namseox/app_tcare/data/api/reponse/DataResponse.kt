@@ -1,4 +1,4 @@
-package com.pranksound.fart.airhorn.haircut.data.api.reponse
+package com.namseox.app_tcare.data.api.reponse
 
 sealed class DataResponse<T> constructor(val loadingStatus: LoadingStatus) {
     class DataLoading<T>(private val loadingType : LoadingStatus) : DataResponse<T>(loadingType)

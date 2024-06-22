@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:fontFamily="@font/grandstander_bold"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="104dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="80dp"
             android:text="@{mTutorialModel.text}"/>
@@ -28,11 +28,12 @@
             android:id="@+id/imv"
             setImg="@{mTutorialModel.bg}"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:visibility="visible"
-            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

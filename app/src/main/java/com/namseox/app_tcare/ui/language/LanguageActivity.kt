@@ -3,7 +3,7 @@ package com.namseox.app_tcare.ui.language
 import android.content.Intent
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.namseox.app_tcare.MainActivity
+import com.namseox.app_tcare.ui.home.MainActivity
 import com.namseox.app_tcare.R
 import com.namseox.app_tcare.data.model.LanguageModel
 import com.namseox.app_tcare.databinding.ActivityLanguageBinding

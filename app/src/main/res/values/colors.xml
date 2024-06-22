@@ -4,4 +4,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="_ffe500">#ffe500</color>
     <color name="gray_5A5A61">#5a5a61</color>
+    <color name="a949494">#949494</color>
+    <color name="a0A57D0">#0a57d0</color>
+    <color name="a6B6B6B">#6b6b6b</color>
+    <color name="_5dcff8">#49C7EF</color>
+    <color name="antique_white">#F9E9DE</color>
+    <color name="blue">#0061AD</color>
+    <color name="a262626">#262626</color>
+    <color name="transfer">#00000000</color>
+    <color name="gray_BFBFBF">#bfbfbf</color>
+    <color name="blue_00E0F9">#00e0f9</color>
 </resources>

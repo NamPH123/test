@@ -37,7 +37,9 @@ import android.view.Window
 import android.view.inputmethod.InputMethodManager
 import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
+import com.namseox.app_tcare.R
 import java.io.IOException
+import java.util.Calendar
 
 
 fun Activity.showSystemUI(white: Boolean) {
@@ -301,4 +303,67 @@ fun onClick(action: () -> Unit) {
         action()
         Const.lastClickTime = System.currentTimeMillis()
     }
+}
+var yearPreset = 0
+var monthPreset = 0
+var dayPreset = 0
+var hourPreset = 0
+var minPreset = 0
+fun checkDay(context: Context, year: Int, month: Int, day: Int, hour: Int, min: Int): Boolean {
+    yearPreset = Calendar.getInstance().get(Calendar.YEAR)
+    monthPreset = Calendar.getInstance().get(Calendar.MONTH)
+    dayPreset = Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+    hourPreset = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+    minPreset = Calendar.getInstance().get(Calendar.MINUTE)
+    Log.d(TAG, "checkDay: ${year}    ${yearPreset}")
+    Log.d(TAG, "checkDay: ${month}    ${monthPreset}")
+    Log.d(TAG, "checkDay: ${day}    ${dayPreset}")
+    Log.d(TAG, "checkDay: ${hour}    ${hourPreset}")
+    Log.d(TAG, "checkDay: ${min}    ${minPreset}")
+
+    if (year > yearPreset) {
+        return true
+    } else {
+        if (year == yearPreset) {
+            if (month > monthPreset) {
+                return true
+            } else {
+                if (month == monthPreset) {
+                    if (day > dayPreset) {
+                        return true
+                    } else {
+                        if (day == dayPreset) {
+                            if (hour > hourPreset) {
+                                return true
+                            } else {
+                                if (hour == hourPreset) {
+                                    if (min > minPreset) {
+                                        return true
+                                    } else {
+                                        timeError(context)
+                                    }
+                                } else {
+                                    timeError(context)
+                                }
+                            }
+                        } else {
+                            timeError(context)
+                        }
+                    }
+                } else {
+                    timeError(context)
+                }
+            }
+        } else {
+            timeError(context)
+        }
+    }
+    return false
+}
+fun timeError(context: Context) {
+    Toast.makeText(
+        context,
+        context.resources.getString(R.string.time_error),
+        Toast.LENGTH_SHORT
+    ).show()
 }
