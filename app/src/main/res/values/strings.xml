@@ -10,4 +10,15 @@
     <string name="start_protecting_yourself_with_solarvpn">Chăm sóc sức khỏe cùng Tcare</string>
     <string name="login">Đăng nhập</string>
     <string name="h_y_ch_m_s_c_s_c_kh_e_c_ng_tcare">Hãy chăm sóc sức khỏe cùng Tcare</string>
+    <string name="c_p_nh_t_th_ng_tin_c_nh_n"><u>Cập nhật thông tin cá nhân</u></string>
+    <string name="c_p_nh_t_m_t_kh_u"><i><u>Thay đổi mật khẩu</u></i></string>
+    <string name="qu_n_l_th_ng_so">Quản lý thông báo</string>
+    <string name="qu_n_l_l_ch_h_n">Quản lý lịch hẹn</string>
+    <string name="th_ng_tin_c_nh_n">Thông tin cá nhân</string>
+    <string name="ng_xu_t">Đăng xuất</string>
+    <string name="t_n">Tên:</string>
+    <string name="quay_v">Quay về</string>
+    <string name="t_nn">Tên:</string>
+    <string name="age">Age</string>
+    <string name="qu_n_l_th_ng_b_o">Quản lý thông báo</string>
 </resources>
